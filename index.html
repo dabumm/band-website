@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascando</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</head>
+<body>
+    <header>
+        
+        <div id="mySidenav" class="sidenav">
+                <div class="closebtn"><a href="javascript:void(0)"  onclick="closeNav()">&times;</a></div>
+                <div class="items"><a href="about.html">About</a><div class="overlay"></div></div>
+                <div class="items"><a href="music.html">Music</a><div class="overlay"></div></div>
+                <div class="items"><a href="tour.html">Tour</a><div class="overlay"></div></div>
+                <div class="items"><a href="contact.html">Contact</a><div class="overlay"></div></div>
+        </div>
+        <nav>
+            <span onclick="openNav()"><a>&#9776;</a></span>
+            <div class="logo"><a href="index.html"><img src="Cascando_logo_grain.png" style="max-width:20%;height:auto;"></a></div>
+        </nav>
+    </header>
+    <div id="main">
+    <div class="outerbackground">
+        <div class="image"></div>
+    </div>
+    
+    <div>
+    <section class="hero">
+        <h2>Stream Our New EP</h2>
+        <p>Listen to our newest tracks and experience our music.</p>
+        <a href="music.html" class="btn">Listen Now</a>
+    </section>
+
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <article>
+            <h3>Exciting Announcement!</h3>
+            <p>We're thrilled to announce our upcoming tour dates. Stay tuned for more information.</p>
+        </article>
+        <!-- More articles can be added here -->
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2024 Band Name. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
